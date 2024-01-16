@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tech Trivia 2023 Registration</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 1000px;
+      padding: 10px;
+      margin: auto;
+      border: 2px solid blue;
+    }
+
+    h1 {
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      border: 2px solid white;
+      color: white;
+      text-transform: uppercase;
+      background-color: blue;
+      font-size: 2rem;
+      text-align: center;
+      padding: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .background {
+      background: rgba(70, 88, 248, 0.575)
+        url("https://images.collegedunia.com/public/college_data/images/campusimage/1621416124IMG_0849_HDR.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-blend-mode: darken;
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      width: 380px;
+      height: 500px;
+      padding: 20px;
+      margin: auto;
+      margin-top: 50px;
+      border: none;
+      color: black;
+      font-weight: 800px;
+      font-size: 1.1rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    input[type="email"],
+    input[type="text"] {
+      padding: 8px;
+      font-size: 1.1rem;
+      background-color: white;
+      border: 1px solid black;
+      width: 90%;
+      margin-left: 10px;
+    }
+    label {
+      margin-left: 10px;
+    }
+    select {
+      padding: 5px;
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      font-size: 1rem;
+      width: 90%;
+      margin-left: 10px;
+    }
+    input[type="file"] {
+      font-size: 1rem;
+      width: 350px;
+      width: 80%;
+      color: black;
+      padding: 5px;
+      background: #fff;
+      border: 1px solid black;
+      margin-left: 10px;
+    }
+    input[type="submit"] {
+      width: 90%;
+      padding: 10px;
+      color: white;
+      font-size: 1rem;
+      text-transform: uppercase;
+      border: 2px outset blue;
+      border-radius: 5px;
+      background-color: blue;
+      transition: all 3ms ease-in;
+      margin-left: 10px;
+    }
+    input[type="submit"]:hover {
+      transform: translateY(2%);
+      background-color: rgba(3, 8, 106, 0.735);
+      cursor: pointer;
+    }
+    footer {
+      background-color: blue;
+      color: white;
+      font-size: 1.1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 10px;
+      margin-bottom: 0px;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <div class="container background">
+      <h1>Tech Trivia 2023 Registration</h1>
+
+      <div class="main">
+        <form action="" method="POST">
+          <label for="full_name"
+            >Full Name: <br />
+            <input
+              type="text"
+              id="full_name"
+              name="full_name"
+              placeholder="Enter Your Full Name"
+              required
+            />
+          </label>
+          <br />
+
+          <label for="email"
+            >Email: <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Valid Email Id"
+              required /></label
+          ><br />
+
+          <label for="phone"
+            >Phone Number: <br />
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Enter Your Valid Phone Number"
+              required /></label
+          ><br />
+
+          <label
+            >Gender:
+            <input type="radio" id="male" name="gender" value="male" />
+            Male
+            <input type="radio" id="female" name="gender" value="female" />
+            Female </label
+          ><br />
+
+          <label
+            >Interests:- <br />
+            <input
+              type="checkbox"
+              id="programming"
+              name="interests"
+              value="programming"
+            />
+
+            Programming
+
+            <input
+              type="checkbox"
+              id="design"
+              name="interests"
+              value="design"
+            />
+            Design
+
+            <input
+              type="checkbox"
+              id="business"
+              name="interests[]"
+              value="business"
+            />
+            Business <br />
+          </label>
+
+          <label for="major"
+            >Select Department: <br />
+            <select id="major" name="major">
+              <option value="SELECT">SELECT</option>
+              <option value="BCA">BCA</option>
+              <option value="B.TECH">B.TECH</option>
+              <option value="BSC">BSC.COMPUTER SCIENCE</option>
+            </select></label
+          >
+          <br />
+
+          <label for="project"
+            >Upload Project: <br />
+            <input type="file" id="project" name="upload" /><br /><br />
+            <input type="submit" value="Submit"
+          /></label>
+        </form>
+      </div>
+      <footer>&copy; Brainware University 2023</footer>
+    </div>
+  </body>
+</html>

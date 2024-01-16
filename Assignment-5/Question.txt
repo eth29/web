@@ -1,0 +1,1 @@
+2 number addition 2 string concatenation using JavaScript.
